@@ -1,0 +1,39 @@
+.btn {
+ padding: 1.8rem 5.1rem;
+ border-radius: 12px;
+ @include font(1.6rem, 1.11, 700, $inter);
+
+ &__getStarted {
+  color: #fff;
+  background: $gradient-orange;
+
+  &:hover {
+   color: #fff;
+   opacity: 0.8;
+  }
+  &:active {
+   color: #fff;
+   opacity: 0.6;
+  }
+ }
+
+ &__signIn {
+  color: $dark-blue;
+ }
+
+ a {
+  color: inherit !important;
+ }
+}
+
+@media (max-width: 1200px) {
+ .btns {
+  display: none;
+ }
+}
+
+@media (max-width: 992px) {
+ .btns {
+  display: block;
+ }
+}
