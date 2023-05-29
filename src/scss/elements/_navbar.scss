@@ -37,7 +37,19 @@
 }
 
 @media (max-width: 992px) {
- .nav-bar {
-  display: block;
+ .nav {
+  &-bar {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.13);
+   backdrop-filter: Blur(10px);
+   flex-direction: column;
+  }
+
+  .list {
+   flex-direction: column;
+  }
  }
 }
