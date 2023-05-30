@@ -24,6 +24,10 @@
  a {
   color: inherit !important;
  }
+
+ &-opener {
+  display: none;
+ }
 }
 
 @media (max-width: 1200px) {
@@ -34,6 +38,13 @@
 
 @media (max-width: 992px) {
  .btns {
-  display: block;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .btn {
+  &-opener {
+   display: block;
+  }
  }
 }

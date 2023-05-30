@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
-  background-color: #f5f5f5;
+  background-color: #F2F0F6;
 }
 
 main {
@@ -63,6 +63,9 @@ img {
 .btn a {
   color: inherit !important;
 }
+.btn-opener {
+  display: none;
+}
 
 @media (max-width: 1200px) {
   .btns {
@@ -71,6 +74,10 @@ img {
 }
 @media (max-width: 992px) {
   .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-opener {
     display: block;
   }
 }
@@ -82,7 +89,7 @@ img {
   right: 0;
   padding-top: 1.7rem;
   padding-bottom: 1.7rem;
-  background-color: #f5f5f5;
+  background-color: #f2f0f6;
 }
 
 .site-logo__link {
@@ -126,6 +133,9 @@ img {
 }
 @media (max-width: 992px) {
   .nav-bar {
+    padding-top: 7rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -134,6 +144,7 @@ img {
     -webkit-backdrop-filter: Blur(10px);
             backdrop-filter: Blur(10px);
     flex-direction: column;
+    display: none;
   }
   .nav .list {
     flex-direction: column;
@@ -142,5 +153,13 @@ img {
 .hero {
   width: 100%;
   height: 500px;
-  background-image: url("../img/png/hero__bg.png");
+  background-image: url("../img/png/hero_bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  padding-top: 23.3rem;
+  padding-bottom: 10.6rem;
+}
+.hero__title {
+  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
