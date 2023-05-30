@@ -29,6 +29,7 @@
   display: none;
   padding: 0;
  }
+
  &-closer {
   padding: 0;
   width: 24px;
@@ -69,6 +70,12 @@
    position: absolute;
    right: 50px;
    z-index: 999 !important;
+  }
+ }
+ &__downArrow {
+  img {
+   width: 27px;
+   height: 13px;
   }
  }
 }

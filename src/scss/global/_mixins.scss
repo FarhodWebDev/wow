@@ -1,7 +1,8 @@
 //
 
-@mixin font($size, $height, $weight, $family) {
+@mixin font($size, $height, $weight, $family, $spacing: normal) {
  font-size: $size;
  line-height: $height;
  font-family: $family;
+ letter-spacing: $spacing;
 }
