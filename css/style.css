@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
-  background-color: #F2F0F6;
+  background-color: #f2f0f6;
 }
 
 main {
@@ -36,6 +36,10 @@ a {
 
 img {
   display: flex;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .btn {
@@ -102,6 +106,7 @@ img {
   background-color: #20243d;
 }
 .btn-closer_wrapper {
+  display: none;
   position: absolute;
   right: 50px;
   z-index: 999 !important;
