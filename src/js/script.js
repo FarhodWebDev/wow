@@ -8,10 +8,11 @@ const btnClose = document.querySelector("#nav-closer");
 const body = document.querySelector("#body");
 const navbar = document.querySelector("#nav-bar");
 
-btnOpener.addEventListener("click", () => {
+btnOpener.addEventListener("click", (e) => {
  navbar.style.display = "block";
  body.classList.add("no-scroll");
  btnClose.style.display = "block";
+ console.log(e);
 });
 
 btnClose.addEventListener("click", () => {

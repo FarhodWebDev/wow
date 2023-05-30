@@ -31,9 +31,40 @@
  &__description {
   margin-bottom: 9.2rem;
   @include font(2.5rem, 1.5, 400, $inter, -1px);
+  text-align: center;
  }
 
  &__btns {
   margin-bottom: 22.4rem;
+ }
+
+ @media screen and (max-width: 1024px) {
+  &__title {
+   font-size: 7rem;
+   letter-spacing: -4px;
+  }
+
+  &__btns {
+   margin-bottom: 10rem;
+  }
+ }
+
+ @media screen and (max-width: 425px) {
+  &__title {
+   font-size: 4rem;
+  }
+
+  &__description {
+   font-size: 1.6rem;
+  }
+
+  &__btns {
+   display: flex;
+   flex-direction: column;
+
+   .btn {
+    font-size: 1.2rem;
+   }
+  }
  }
 }

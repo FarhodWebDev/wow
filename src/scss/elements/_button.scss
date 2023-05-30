@@ -2,6 +2,7 @@
  padding: 1.8rem 5.1rem;
  border-radius: 12px;
  @include font(1.6rem, 1.11, 700, $inter);
+ cursor: pointer;
 
  &__getStarted {
   color: #fff;
@@ -32,8 +33,8 @@
 
  &-closer {
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   border-radius: 0;
   position: relative;
   border: none;
@@ -73,6 +74,7 @@
   }
  }
  &__downArrow {
+  padding: 0;
   img {
    width: 27px;
    height: 13px;
@@ -88,16 +90,23 @@
 
 @media (max-width: 992px) {
  .btns {
+  height: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 10vh;
   gap: 1rem;
  }
 
  .btn {
+  padding: 1.5rem 4.8rem;
+
   &-opener {
    display: block;
+  }
+
+  &-closer {
+   padding: 0;
   }
  }
 }

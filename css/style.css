@@ -48,6 +48,7 @@ img {
   line-height: 1.11;
   font-family: "Inter", sans-serif;
   letter-spacing: normal;
+  cursor: pointer;
 }
 .btn__getStarted {
   color: #fff;
@@ -73,8 +74,8 @@ img {
 }
 .btn-closer {
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   border-radius: 0;
   position: relative;
   border: none;
@@ -111,6 +112,9 @@ img {
   right: 50px;
   z-index: 999 !important;
 }
+.btn__downArrow {
+  padding: 0;
+}
 .btn__downArrow img {
   width: 27px;
   height: 13px;
@@ -123,14 +127,21 @@ img {
 }
 @media (max-width: 992px) {
   .btns {
+    height: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 10vh;
     gap: 1rem;
+  }
+  .btn {
+    padding: 1.5rem 4.8rem;
   }
   .btn-opener {
     display: block;
+  }
+  .btn-closer {
+    padding: 0;
   }
 }
 .header {
@@ -141,7 +152,7 @@ img {
   right: 0;
   padding-top: 1.7rem;
   padding-bottom: 1.7rem;
-  background-color: #f2f0f6;
+  z-index: 998 !important;
 }
 
 .site-logo__link {
@@ -242,7 +253,32 @@ img {
   line-height: 1.5;
   font-family: "Inter", sans-serif;
   letter-spacing: -1px;
+  text-align: center;
 }
 .hero__btns {
   margin-bottom: 22.4rem;
+}
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    font-size: 7rem;
+    letter-spacing: -4px;
+  }
+  .hero__btns {
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero__title {
+    font-size: 4rem;
+  }
+  .hero__description {
+    font-size: 1.6rem;
+  }
+  .hero__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__btns .btn {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
