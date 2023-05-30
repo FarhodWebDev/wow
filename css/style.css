@@ -65,6 +65,46 @@ img {
 }
 .btn-opener {
   display: none;
+  padding: 0;
+}
+.btn-closer {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 0;
+  position: relative;
+  border: none;
+}
+.btn-closer:after {
+  content: "";
+  position: absolute;
+  top: -3.2px;
+  bottom: 0;
+  left: 49%;
+  right: 50%;
+  height: 130%;
+  width: 2px;
+  transform: translate(-50%, 0%);
+  transform: rotateZ(45deg);
+  background-color: #20243d;
+}
+.btn-closer::before {
+  content: "";
+  position: absolute;
+  top: -3.2px;
+  bottom: 0;
+  left: 49%;
+  right: 50%;
+  height: 130%;
+  width: 2px;
+  transform: translate(-50%, 0%);
+  transform: rotateZ(-45deg);
+  background-color: #20243d;
+}
+.btn-closer_wrapper {
+  position: absolute;
+  right: 50px;
+  z-index: 999 !important;
 }
 
 @media (max-width: 1200px) {
@@ -76,6 +116,9 @@ img {
   .btns {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
   }
   .btn-opener {
     display: block;
@@ -107,6 +150,7 @@ img {
 .nav-bar {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .list {
@@ -131,11 +175,11 @@ img {
     gap: 8rem;
   }
 }
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .nav-bar {
     padding-top: 7rem;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     position: fixed;
     top: 0;
     right: 0;

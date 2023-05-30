@@ -27,6 +27,48 @@
 
  &-opener {
   display: none;
+  padding: 0;
+ }
+ &-closer {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 0;
+  position: relative;
+  border: none;
+
+  &:after {
+   content: "";
+   position: absolute;
+   top: -3.2px;
+   bottom: 0;
+   left: 49%;
+   right: 50%;
+   height: 130%;
+   width: 2px;
+   transform: translate(-50%, 0%);
+   transform: rotateZ(45deg);
+   background-color: $dark-blue;
+  }
+  &::before {
+   content: "";
+   position: absolute;
+   top: -3.2px;
+   bottom: 0;
+   left: 49%;
+   right: 50%;
+   height: 130%;
+   width: 2px;
+   transform: translate(-50%, 0%);
+   transform: rotateZ(-45deg);
+   background-color: $dark-blue;
+  }
+
+  &_wrapper {
+   position: absolute;
+   right: 50px;
+   z-index: 999 !important;
+  }
  }
 }
 
@@ -40,6 +82,9 @@
  .btns {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
  }
 
  .btn {
